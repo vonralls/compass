@@ -1,5 +1,7 @@
 <?php
 
+require_once get_template_directory() . '/inc/quotes.php';
+
 /**
  * Compass Theme Functions
  */
@@ -118,3 +120,4 @@ add_action(
     'wp_enqueue_scripts',
     'compass_scripts'
 );
+
