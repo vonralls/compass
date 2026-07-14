@@ -1,17 +1,44 @@
 <!-- wp:group {"className":"site-header","layout":{"type":"constrained"}} -->
 <div class="wp-block-group site-header">
-<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap","verticalAlignment":"center"}} -->
-<div class="wp-block-group">
-<div>
-<!-- wp:site-title {"level":0} /-->
-<!-- wp:site-tagline /-->
+
+    <!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap","verticalAlignment":"center"}} -->
+    <div class="wp-block-group">
+
+        <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+        <div class="wp-block-group">
+
+            <!-- wp:image {"width":"56px","sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image size-full is-resized">
+                <img src="/wp-content/themes/compass/assets/images/logo.png"
+                     alt="Compass Logo"/>
+            </figure>
+            <!-- /wp:image -->
+
+            <!-- wp:group {"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group">
+
+                <!-- wp:site-title {"level":0} /-->
+
+                <!-- wp:paragraph {"className":"site-tagline"} -->
+                <p class="site-tagline">Building better systems</p>
+                <!-- /wp:paragraph -->
+
+            </div>
+            <!-- /wp:group -->
+
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:navigation -->
+            <!-- wp:navigation-link {"label":"Start Here","url":"/start-here"} /-->
+            <!-- wp:navigation-link {"label":"Writing","url":"/articles"} /-->
+            <!-- wp:navigation-link {"label":"About","url":"/about"} /-->
+            <!-- wp:navigation-link {"label":"Now","url":"/now"} /-->
+            <!-- wp:navigation-link {"label":"Uses","url":"/uses"} /-->
+        <!-- /wp:navigation -->
+
+    </div>
+    <!-- /wp:group -->
+
 </div>
-<!-- wp:navigation -->
- <!-- wp:navigation-link {"label":"Start Here","url":"/start-here"} /-->
-<!-- wp:navigation-link {"label":"Writing","url":"/articles"} /-->
-<!-- wp:navigation-link {"label":"About","url":"/about"} /-->
-<!-- wp:navigation-link {"label":"Now","url":"/now"} /-->
-<!-- wp:navigation-link {"label":"Uses","url":"/uses"} /-->
-<!-- /wp:navigation -->
-</div><!-- /wp:group -->
-</div><!-- /wp:group -->
+<!-- /wp:group -->

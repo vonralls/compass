@@ -513,3 +513,34 @@ a:hover{ text-decoration:underline; }
     color: #888;
 
 }
+/* ==========================================================
+   Brand
+   ========================================================== */
+
+.site-header .wp-block-group:first-child .wp-block-group:first-child {
+    gap: 24px;
+}
+
+.site-header .wp-block-image {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.site-header .wp-block-image img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.site-header .wp-block-site-title {
+    margin: 0 0 6px;
+    font-size: 2rem;
+    line-height: 1.05;
+}
+
+.site-tagline {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+    letter-spacing: 0.03em;
+}
