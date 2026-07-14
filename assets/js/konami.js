@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
     const secret = [
         "ArrowUp",
@@ -13,42 +13,58 @@ document.addEventListener("DOMContentLoaded", function () {
         "a"
     ];
 
-    let keys = [];
+    let entered = [];
 
-    document.addEventListener("keydown", function (e) {
+    document.addEventListener("keydown", (e) => {
 
-        keys.push(e.key);
+        entered.push(e.key.toLowerCase());
 
-        keys = keys.slice(-secret.length);
+        entered = entered.slice(-secret.length);
 
-        console.log(keys);
+        const match = secret.every((key, index) => {
+            return key.toLowerCase() === entered[index];
+        });
 
-        if (JSON.stringify(keys.map(k => k.toLowerCase())) ===
-            JSON.stringify(secret.map(k => k.toLowerCase()))) {
-
-            const toast = document.createElement("div");
-
-toast.className = "owl-toast";
-toast.textContent = "🦉 The owls are not what they seem.";
-
-document.body.appendChild(toast);
-
-setTimeout(() => {
-    toast.classList.add("visible");
-}, 10);
-
-setTimeout(() => {
-    toast.classList.remove("visible");
-
-    setTimeout(() => {
-        toast.remove();
-    }, 300);
-
-}, 5000);
-
-            keys = [];
+        if (!match) {
+            return;
         }
 
+        entered = [];
+
+        showOwl();
+
     });
+
+    function showOwl() {
+
+        const existing = document.querySelector(".owl-toast");
+
+        if (existing) {
+            existing.remove();
+        }
+
+        const toast = document.createElement("div");
+
+        toast.className = "owl-toast";
+
+        toast.textContent = "🦉 The owls are not what they seem.";
+
+        document.body.appendChild(toast);
+
+        requestAnimationFrame(() => {
+            toast.classList.add("visible");
+        });
+
+        setTimeout(() => {
+
+            toast.classList.remove("visible");
+
+            setTimeout(() => {
+                toast.remove();
+            }, 300);
+
+        }, 5000);
+
+    }
 
 });
