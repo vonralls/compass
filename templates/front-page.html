@@ -1,0 +1,55 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"align":"full","className":"hero-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull hero-section">
+
+<!-- wp:heading {"level":1,"fontSize":"xx-large"} -->
+<h1>Marketing, Technology &amp; Life</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Practical lessons from building marketing systems, writing code, training for endurance, and following interesting rabbit holes. This is where I document what I learn and share what might help others.</p>
+<!-- /wp:paragraph -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:separator --><hr class="wp-block-separator"/><!-- /wp:separator -->
+
+<!-- wp:heading --><h2>Latest Writing</h2><!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"section-intro"} -->
+<p class="section-intro">Thoughts, tutorials, experiments, and lessons from work, technology, endurance training, and everyday curiosity.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:query {"queryId":1,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false}} -->
+<div class="wp-block-query">
+<!-- wp:post-template -->
+<!-- wp:group {"className":"article-card"} -->
+<div class="wp-block-group article-card">
+<!-- wp:post-featured-image /-->
+<!-- wp:post-terms {"term":"category"} /-->
+<!-- wp:post-title {"isLink":true} /-->
+<!-- wp:post-excerpt /-->
+</div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+</div>
+<!-- /wp:query -->
+
+<!-- wp:separator --><hr class="wp-block-separator"/><!-- /wp:separator -->
+
+<!-- wp:heading --><h2>Explore</h2><!-- /wp:heading -->
+
+<!-- wp:group {"className":"topic-grid"} -->
+<div class="wp-block-group topic-grid">
+<div class="wp-block-group topic-card"><h3>Marketing</h3><p>Marketing technology, automation, analytics, and better customer experiences.</p></div>
+<div class="wp-block-group topic-card"><h3>Technology</h3><p>Software, platforms, systems, and the tools shaping how we work.</p></div>
+<div class="wp-block-group topic-card"><h3>Coding</h3><p>Projects, scripts, experiments, and things I build.</p></div>
+<div class="wp-block-group topic-card"><h3>AI</h3><p>Artificial intelligence, workflows, prompts, and experiments.</p></div>
+<div class="wp-block-group topic-card"><h3>Fitness</h3><p>Running, CrossFit, endurance, and the pursuit of improvement.</p></div>
+<div class="wp-block-group topic-card"><h3>Personal</h3><p>Lessons learned, observations, and life outside the keyboard.</p></div>
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

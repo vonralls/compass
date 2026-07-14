@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+
+# OS files
+Thumbs.db
+
+# FTP
+.lftp/
+
+# Composer
+vendor/

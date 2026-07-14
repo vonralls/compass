@@ -1,0 +1,439 @@
+/*
+Theme Name: Compass
+Theme URI: https://vonralls.com
+Author: Von Ralls
+Description: A minimal personal publishing theme.
+Version: 0.7
+Text Domain: compass
+*/
+
+/* ==========================================================
+   Base
+   ========================================================== */
+
+html { scroll-behavior:smooth; }
+
+body{
+    margin:0;
+    background:#FAFAF7;
+    color:#1C1C1C;
+    font:18px/1.7 "Inter",Arial,sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:"Space Grotesk",Arial,sans-serif;
+    font-weight:600;
+    line-height:1.15;
+    letter-spacing:-.03em;
+}
+
+a{
+    color:#2563EB;
+    text-decoration:none;
+    transition:.2s ease;
+}
+
+a:hover{ text-decoration:underline; }
+
+.wp-site-blocks{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 32px;
+}
+
+/* ==========================================================
+   Header
+   ========================================================== */
+
+.site-header{
+    padding:40px 0 56px;
+    border-bottom:1px solid #E6E6E6;
+    margin-bottom:48px;
+}
+
+.site-header .wp-block-site-title{margin:0;}
+
+.site-header .wp-block-site-title a{
+    color:#1C1C1C;
+    font:700 2rem "Space Grotesk",sans-serif;
+}
+
+.site-header .wp-block-site-tagline{
+    margin-top:6px;
+    color:#666;
+    font-size:.95rem;
+}
+
+.site-header .wp-block-navigation{
+    gap:1.75rem;
+    font-size:.95rem;
+}
+
+.site-header .wp-block-navigation a{color:#666;}
+.site-header .wp-block-navigation a:hover,
+.site-header .wp-block-navigation .current-menu-item a{
+    color:#1C1C1C;
+}
+
+/* ==========================================================
+   Hero
+   ========================================================== */
+
+.hero-section{
+    max-width:850px;
+    padding:80px 0 120px;
+}
+
+.hero-section h1{
+    max-width:700px;
+    font-size:clamp(52px,7vw,84px);
+    margin:0 0 16px;
+}
+
+.hero-section p{
+    max-width:650px;
+    font-size:1.25rem;
+    color:#555;
+}
+
+/* ==========================================================
+   Sections
+   ========================================================== */
+
+.wp-block-separator{
+    border:0;
+    border-top:1px solid #E6E6E6;
+    margin:80px 0;
+}
+
+.section-intro{
+    max-width:650px;
+    color:#666;
+    font-size:1.1rem;
+    margin-bottom:2rem;
+}
+
+/* ==========================================================
+   Article Cards
+   ========================================================== */
+
+.article-card{
+    display:grid;
+    grid-template-columns:260px 1fr;
+    gap:32px;
+    align-items:center;
+    background:#FFF;
+    border:1px solid #E6E6E6;
+    border-radius:18px;
+    padding:24px;
+    margin-bottom:32px;
+    transition:transform .2s ease;
+}
+
+.article-card:hover{transform:translateY(-4px);}
+
+.article-card img{
+    width:260px;
+    height:180px;
+    object-fit:cover;
+    border-radius:14px;
+}
+
+.article-card .wp-block-post-title{
+    font-size:1.9rem;
+    margin:.5rem 0;
+}
+
+.article-card .wp-block-post-terms{
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-size:.75rem;
+    color:#777;
+}
+
+.article-card .wp-block-post-excerpt{color:#666;}
+
+/* ==========================================================
+   Topic Cards
+   ========================================================== */
+
+.topic-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.topic-card{
+    background:#FFF;
+    border:1px solid #E6E6E6;
+    border-radius:18px;
+    padding:28px;
+    transition:transform .2s ease;
+}
+
+.topic-card:hover{transform:translateY(-4px);}
+.topic-card h3{margin-top:0;}
+.topic-card p{color:#666;}
+
+/* ==========================================================
+   Article Experience
+   ========================================================== */
+
+.single-post-header{
+    max-width:850px;
+    margin:0 auto;
+    padding:80px 0 40px;
+    text-align:center;
+}
+
+.single-post-header h1{
+    font-size:clamp(48px,7vw,76px);
+    margin:24px 0;
+}
+
+.post-meta{
+    color:#777;
+    font-size:.9rem;
+    margin-top:20px;
+}
+
+.article-content{
+    max-width:720px;
+    margin:0 auto;
+}
+
+.article-content p{
+    font-size:20px;
+    line-height:1.9;
+    margin-bottom:2rem;
+}
+
+.article-content h2{
+    font-size:2.4rem;
+    margin:4rem 0 1rem;
+}
+
+.article-content h3{
+    font-size:1.8rem;
+    margin:3rem 0 1rem;
+}
+
+.article-content ul,
+.article-content ol{
+    margin-bottom:2rem;
+    padding-left:1.5rem;
+}
+
+.article-content blockquote{
+    margin:3rem 0;
+    padding-left:1.5rem;
+    border-left:4px solid #2563EB;
+    font-size:1.4rem;
+    color:#444;
+}
+
+.article-content pre{
+    background:#1C1C1C;
+    color:#F5F5F5;
+    padding:24px;
+    border-radius:12px;
+    overflow:auto;
+}
+
+.article-content code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+
+.article-content img{
+    width:100%;
+    border-radius:16px;
+    margin:3rem 0;
+}
+
+/* ==========================================================
+   Responsive
+   ========================================================== */
+
+@media (max-width:768px){
+
+.wp-site-blocks{padding:0 20px;}
+
+.article-card{
+    grid-template-columns:1fr;
+}
+
+.article-card img{
+    width:100%;
+    height:auto;
+}
+
+.topic-grid{
+    grid-template-columns:1fr;
+}
+
+.hero-section{
+    padding:48px 0 80px;
+}
+
+.hero-section h1{
+    font-size:3rem;
+}
+
+.article-content p{
+    font-size:19px;
+}
+
+}
+/* ==========================================================
+   Compass 0.7.1 - Article Polish
+   Append to the END of style.css
+   ========================================================== */
+
+/* ---------- Single Article Header ---------- */
+
+.single-post-header .wp-block-post-terms{
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:.8rem;
+    font-weight:600;
+    color:#888;
+    margin-bottom:20px;
+}
+
+.single-post-header .wp-block-post-terms a{
+    color:#888;
+    text-decoration:none;
+}
+
+.single-post-header .wp-block-post-excerpt{
+    max-width:720px;
+    margin:0 auto;
+    font-size:1.6rem;
+    line-height:1.6;
+    color:#555;
+}
+
+.post-meta{
+    margin:32px 0 60px;
+    font-size:.95rem;
+    color:#777;
+    gap:12px;
+}
+
+/* ---------- Article ---------- */
+
+.article-content{
+    max-width:760px;
+    margin:0 auto;
+}
+
+.article-content > p:first-of-type::first-letter{
+    float:left;
+    font-size:4.8rem;
+    line-height:.9;
+    padding:.05em .12em 0 0;
+    font-family:"Space Grotesk",sans-serif;
+    font-weight:700;
+}
+
+.article-content a{
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+    text-underline-offset:3px;
+}
+
+.article-content hr{
+    margin:4rem 0;
+    border:none;
+    border-top:1px solid #E6E6E6;
+}
+
+.article-content figcaption{
+    text-align:center;
+    color:#777;
+    font-size:.9rem;
+    margin-top:.75rem;
+}
+
+/* ---------- Callouts ---------- */
+
+.callout{
+    margin:2.5rem 0;
+    padding:1.5rem 1.75rem;
+    border-left:4px solid #2563EB;
+    background:#F7F8FC;
+    border-radius:12px;
+}
+
+.callout p:last-child{
+    margin-bottom:0;
+}
+
+.callout.tip{
+    border-left-color:#2563EB;
+}
+
+.callout.note{
+    border-left-color:#6B7280;
+}
+
+.callout.warning{
+    border-left-color:#D97706;
+    background:#FFF8EB;
+}
+
+/* ---------- Tables ---------- */
+
+.article-content table{
+    width:100%;
+    border-collapse:collapse;
+    margin:2.5rem 0;
+    font-size:.95rem;
+}
+
+.article-content th,
+.article-content td{
+    border:1px solid #E5E5E5;
+    padding:14px 16px;
+    text-align:left;
+}
+
+.article-content th{
+    background:#F5F5F5;
+}
+
+/* ---------- Code ---------- */
+
+.article-content pre{
+    background:#111827;
+    color:#F9FAFB;
+    border-radius:14px;
+    padding:24px;
+    overflow-x:auto;
+    margin:2.5rem 0;
+}
+
+.article-content code{
+    font-size:.95rem;
+}
+
+:not(pre)>code{
+    background:#F1F3F5;
+    padding:.15rem .35rem;
+    border-radius:5px;
+}
+
+/* ---------- Navigation ---------- */
+
+.wp-block-post-navigation-link{
+    font-weight:600;
+    margin:2rem 0;
+}
+
+.wp-block-post-navigation-link a{
+    color:#1C1C1C;
+}
+
+.wp-block-post-navigation-link a:hover{
+    color:#2563EB;
+}
