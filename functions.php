@@ -102,3 +102,19 @@ add_shortcode(
     'reading_time',
     'compass_reading_time_shortcode'
 );
+function compass_scripts() {
+
+    wp_enqueue_script(
+        'compass-konami',
+        get_template_directory_uri() . '/assets/js/konami.js',
+        array(),
+        wp_get_theme()->get( 'Version' ),
+        true
+    );
+
+}
+
+add_action(
+    'wp_enqueue_scripts',
+    'compass_scripts'
+);
