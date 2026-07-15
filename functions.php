@@ -121,3 +121,24 @@ add_action(
     'compass_scripts'
 );
 
+/**
+ * Mailchimp Connected Sites
+ */
+function compass_mailchimp_connected_site() {
+    ?>
+    <script id="mcjs">
+        !function(c,h,i,m,p){
+            m=c.createElement(h),
+            p=c.getElementsByTagName(h)[0],
+            m.async=1,
+            m.src=i,
+            p.parentNode.insertBefore(m,p)
+        }(
+            document,
+            "script",
+            "https://chimpstatic.com/mcjs-connected/js/users/41d12daf5a3640d12ad605ef1/007ab43cc6e564297c8a206fa.js"
+        );
+    </script>
+    <?php
+}
+add_action('wp_head', 'compass_mailchimp_connected_site');
