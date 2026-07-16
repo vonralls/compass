@@ -40,21 +40,7 @@ function compass_quotes() {
         'source' => 'Extreme Programming Explained',
     ],
 
-    [
-        'id' => 'simplicity-is-the-ultimate-sophistication',
-        'quote' => 'Simplicity is the ultimate sophistication.',
-        'author' => 'Often attributed to Leonardo da Vinci',
-        'category' => 'Design',
-        'source' => 'Common attribution',
-    ],
 
-    [
-        'id' => 'first-solve-the-problem',
-        'quote' => 'First, solve the problem. Then, write the code.',
-        'author' => 'John Johnson',
-        'category' => 'Programming',
-        'source' => 'Common quotation',
-    ],
 
     [
         'id' => 'best-way-to-predict',
@@ -87,6 +73,85 @@ function compass_quotes() {
         'category' => 'Literature',
         'source' => 'The Fellowship of the Ring',
     ],
+    [
+    'id' => 'science-is-a-way-of-thinking',
+    'quote' => 'Science is a way of thinking much more than it is a body of knowledge.',
+    'author' => 'Carl Sagan',
+    'category' => 'Science',
+    'source' => 'The Demon-Haunted World',
+],
+
+[
+    'id' => 'extraordinary-claims',
+    'quote' => 'Extraordinary claims require extraordinary evidence.',
+    'author' => 'Carl Sagan',
+    'category' => 'Science',
+    'source' => 'Broca\'s Brain',
+],
+
+[
+    'id' => 'programs-written-for-people',
+    'quote' => 'Programs must be written for people to read, and only incidentally for machines to execute.',
+    'author' => 'Harold Abelson',
+    'category' => 'Programming',
+    'source' => 'Structure and Interpretation of Computer Programs',
+],
+
+[
+    'id' => 'predict-the-future',
+    'quote' => 'The best way to predict the future is to invent it.',
+    'author' => 'Alan Kay',
+    'category' => 'Technology',
+    'source' => 'Xerox PARC',
+],
+
+[
+    'id' => 'simplicity-prerequisite',
+    'quote' => 'Simplicity is prerequisite for reliability.',
+    'author' => 'Edsger W. Dijkstra',
+    'category' => 'Programming',
+    'source' => 'Notes on Structured Programming',
+],
+
+[
+    'id' => 'measure-lines-of-code',
+    'quote' => 'Measuring programming progress by lines of code is like measuring aircraft building progress by weight.',
+    'author' => 'Bill Gates',
+    'category' => 'Programming',
+    'source' => 'Commonly cited Microsoft remark',
+],
+
+[
+    'id' => 'focus-is-saying-no',
+    'quote' => 'Focusing is about saying no.',
+    'author' => 'Steve Jobs',
+    'category' => 'Leadership',
+    'source' => 'Apple WWDC 1997',
+],
+
+[
+    'id' => 'writing-easy-reading-hard',
+    'quote' => 'Easy reading is damn hard writing.',
+    'author' => 'Nathaniel Hawthorne',
+    'category' => 'Writing',
+    'source' => 'American Notebooks',
+],
+
+[
+    'id' => 'chance-favors-prepared-mind',
+    'quote' => 'Chance favors the prepared mind.',
+    'author' => 'Louis Pasteur',
+    'category' => 'Science',
+    'source' => 'Lecture at the University of Lille',
+],
+
+[
+    'id' => 'stay-hungry-stay-foolish',
+    'quote' => 'Stay hungry. Stay foolish.',
+    'author' => 'Steve Jobs',
+    'category' => 'Technology',
+    'source' => 'Stanford Commencement Address (2005)',
+],
 
 ];
 
