@@ -544,3 +544,57 @@ a:hover{ text-decoration:underline; }
     color: #666;
     letter-spacing: 0.03em;
 }
+
+/* -----------------------------------------------------
+   Code Blocks
+------------------------------------------------------*/
+
+pre[class*="language-"] {
+
+    border-radius:16px;
+    padding:1.5rem;
+    margin:2rem 0;
+
+    font-size:.92rem;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,.08);
+
+    overflow:auto;
+}
+
+code[class*="language-"]{
+    font-family:
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        monospace;
+}
+
+div.code-toolbar>.toolbar{
+    opacity:1;
+}
+
+div.code-toolbar>.toolbar button{
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    border-radius:6px;
+
+    padding:6px 12px;
+
+    font-size:.8rem;
+
+    cursor:pointer;
+}
+
+div.code-toolbar>.toolbar button:hover{
+
+    background:#1d4ed8;
+
+}

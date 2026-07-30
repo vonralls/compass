@@ -137,3 +137,49 @@ function compass_mailchimp_connected_site() {
 }
 
 add_action('wp_enqueue_scripts', 'compass_mailchimp_connected_site');
+
+/**
+ * Prism.js syntax highlighting
+ */
+function compass_enqueue_prism() {
+
+    wp_enqueue_style(
+        'prism-css',
+        'https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.min.css',
+        array(),
+        '1.30.0'
+    );
+
+    wp_enqueue_script(
+        'prism-js',
+        'https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js',
+        array(),
+        '1.30.0',
+        true
+    );
+
+    wp_enqueue_script(
+        'prism-toolbar',
+        'https://cdn.jsdelivr.net/npm/prismjs@1/plugins/toolbar/prism-toolbar.min.js',
+        array('prism-js'),
+        '1.30.0',
+        true
+    );
+
+    wp_enqueue_script(
+        'prism-copy',
+        'https://cdn.jsdelivr.net/npm/prismjs@1/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js',
+        array('prism-toolbar'),
+        '1.30.0',
+        true
+    );
+
+    wp_enqueue_style(
+        'prism-toolbar-css',
+        'https://cdn.jsdelivr.net/npm/prismjs@1/plugins/toolbar/prism-toolbar.min.css',
+        array(),
+        '1.30.0'
+    );
+}
+
+add_action('wp_enqueue_scripts', 'compass_enqueue_prism');
