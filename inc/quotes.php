@@ -5,6 +5,12 @@
  */
 
 function compass_quotes() {
+    /**
+ * Compass Quote Library
+ *
+ * Quotes are organized alphabetically by category and then by author.
+ * Please verify quotations and sources before adding them.
+ */
 
    return [
 
