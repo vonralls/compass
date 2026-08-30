@@ -131,7 +131,7 @@ function compass_mailchimp_connected_site() {
         'https://chimpstatic.com/mcjs-connected/js/users/41d12daf5a3640d12ad605ef1/007ab43cc6e564297c8a206fa.js',
         [],
         null,
-        false
+        true // Load in footer
     );
 
 }
